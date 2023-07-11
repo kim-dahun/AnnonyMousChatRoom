@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/base_layout}">
+
+<main layout:fragment="main">
+	
+	<!-- 내 방 관계 없이 전체 방 리스트 표출 -->
+	<div>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>방 번호</th>
+				<th>방 이름</th>
+				<th>방장 이름</th>
+				<th>인원 수</th>
+				<th>공개/비공개 여부</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	<div class="row">
+		<div class="col-8">
+		<input class="card" type="text" name="searchtext" id="searchtext" placeholder="검색어를 입력하세요." />
+		</div>
+		<div class="col-2">
+		<select class="card" id="searchoption" name="searchoption">
+			<option value="0" selected="selected">방 제목</option>
+			<option value="1" selected="selected">방장 이름</option>
+		</select>
+		</div>
+		<div class="col-2">
+		<button class="btn btn-outline-dark" id="searchbtn">검색</button>
+		</div>
+	</div>
+	
+</main>
+	
+</html>
